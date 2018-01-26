@@ -9,10 +9,10 @@
     "Matt Smith <mtscout6+node-jira@gmail.com>",
     "Anson Wayman <kanoyugoro+node-jira@gmail.com>"
   ],
-  "homepage": "http://github.com/jira-node/node-jira-client",
+  "homepage": "https://github.com/Roadmunk/node-jira-client",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jira-node/node-jira-client.git"
+    "url": "git+ssh://git@github.com:Roadmunk/node-jira-client.git"
   },
   "engine": {
     "node": ">=4.2.2"
@@ -62,10 +62,9 @@
     "tmpDocsRepo": "tmp-docs-repo"
   },
   "bugs": {
-    "url": "https://github.com/jira-node/node-jira-client/issues"
+    "url": "https://github.com/Roadmunk/node-jira-client/issues"
   },
   "directories": {
     "lib": "lib",
-    "test": "test"
   }
 }
