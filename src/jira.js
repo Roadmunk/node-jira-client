@@ -24,9 +24,11 @@ export default class JiraApi {
       // This is so we can fake during unit tests
     this.request = options.request || request;
 
-    if (options.proxy) {
-        this.request = this.request.defaults({ proxy : options.proxy });
-    }
+    this.request = this.request.defaults({
+        proxy : options.proxy ? options.proxy : undefined,
+        key   : options.key ? options.key : undefined,
+        cert  : options.cert ? options.cert : undefined,
+    });
 
     this.webhookVersion = options.webHookVersion || '1.0';
     this.greenhopperVersion = options.greenhopperVersion || '1.0';
