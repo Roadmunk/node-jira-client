@@ -25,9 +25,9 @@ export default class JiraApi {
     this.request = options.request || request;
 
     this.request = this.request.defaults({
-        proxy : options.proxy ? options.proxy : undefined,
-        key   : options.key ? options.key : undefined,
-        cert  : options.cert ? options.cert : undefined,
+      proxy: options.proxy ? options.proxy : undefined,
+      key: options.clientCert && options.clientCert.key ? options.clientCert.key : undefined,
+      cert: options.clientCert && options.clientCert.cert ? options.clientCert.cert : undefined,
     });
 
     this.webhookVersion = options.webHookVersion || '1.0';
